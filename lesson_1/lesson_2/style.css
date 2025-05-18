@@ -1,0 +1,64 @@
+body{
+    color: white;
+    background-color: rgb(220, 220, 236);
+    font-size: 20px; 
+    background-color:black;
+}
+h1,h2{
+    color: rgb(252, 252, 255);
+    font-size: 20px;
+    font-style: italic;
+}
+p{
+    color: rgb(92, 92, 97);
+    font-size: 20px;
+    
+}
+/* #schedule{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+} */
+.highlight{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+}
+.section{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+ol{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+ul{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+table{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+article{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+aside{
+    color: rgb(103, 103, 110);
+    font-size: 20px;
+    font-style: italic;
+}
+input{
+    color: rgb(36, 36, 214);
+    font-style: italic;
+}
+a{
+    color: rgb(36, 36, 214);
+    font-style: italic;
+}
