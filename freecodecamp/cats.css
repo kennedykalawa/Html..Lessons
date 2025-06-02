@@ -1,0 +1,22 @@
+ body{
+    background-image: url(catshop2.jpeg);
+    /* color: white;
+    background-color: rgb(220, 220, 236);
+    font-size: 20px; 
+    background-color:black; */
+} 
+h1{
+    background-color: burlywood;
+    
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+fieldset{
+    background-color: burlywood;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
