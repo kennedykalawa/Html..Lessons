@@ -1,10 +1,10 @@
  body{
     font-family: sans-serif;
-    background-image: url(catj.jpg);
-    /* color: white;
+    /* background-image: url(catj.jpg); */
+    color: white;
     background-color: rgb(220, 220, 236);
     font-size: 20px; 
-    background-color:black; */
+   /*  background-color:black; */ 
 } 
 h1{
     background-color: burlywood;
@@ -27,6 +27,7 @@ p{
     font-size: 20px;
 }
 h2{
+    background-color: rgb(0, 0, 0);
     padding-left: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -37,3 +38,13 @@ h2{
     font-style: italic;
     text-decoration: none;
 } */
+#s1{
+    background-color: rgb(36, 134, 214);
+    font-style: italic;
+    text-decoration: none;
+}
+#s2{
+    background-color: rgb(36, 134, 214);
+    font-style: italic;
+    text-decoration: none;
+}
