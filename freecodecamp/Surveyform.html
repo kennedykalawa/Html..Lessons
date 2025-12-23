@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Modern Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="surveyform.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Please fill out this form with the information required</p>
+    <div class="form-container">
+        <header>
+            <h1 id="title">User Experience Survey</h1>
+            <p id="description">Help us improve by sharing your thoughts.</p>
+        </header>
         
         <form id="survey-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="jane@example.com" required>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <p class="label-heading">How often do you use our service?</p>
+                <div class="radio-group">
+                    <label class="radio-item"><input name="usage" value="daily" type="radio"> Daily</label>
+                    <label class="radio-item"><input name="usage" value="weekly" type="radio"> Weekly</label>
+                    <label class="radio-item"><input name="usage" value="monthly" type="radio"> Monthly</label>
+                </div>
             </div>
 
             <div class="form-group">
-                <p>Would you recommend us to a friend?</p>
-                <label><input name="user-recommend" value="definitely" type="radio" checked> Definitely</label>
-                <label><input name="user-recommend" value="maybe" type="radio"> Maybe</label>
-                <label><input name="user-recommend" value="not-sure" type="radio"> Not sure</label>
+                <p class="label-heading">What features do you love? (Select all that apply)</p>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="speed"> High Speed</label>
+                    <label><input type="checkbox" value="design"> Modern Design</label>
+                    <label><input type="checkbox" value="support"> 24/7 Support</label>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="dropdown">Favorite Feature</label>
-                <select id="dropdown">
-                    <option disabled selected value>Select an option</option>
-                    <option value="ui">User Interface</option>
-                    <option value="speed">Performance</option>
-                    <option value="support">Customer Support</option>
-                </select>
+                <label for="comments">Additional Feedback</label>
+                <textarea id="comments" rows="4" placeholder="Tell us more..."></textarea>
             </div>
 
-            <div class="form-group">
-                <label for="comments">Any comments or suggestions?</label>
-                <textarea id="comments" placeholder="Enter your comment here..."></textarea>
-            </div>
-
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit">Send Feedback</button>
         </form>
     </div>
 </body>
