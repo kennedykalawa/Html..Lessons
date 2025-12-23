@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Survey Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Premium Survey Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="surveyform.css">
 </head>
 <body>
-    <div class="form-container">
+    <div class="glass-card">
+        <div class="progress-bar-container">
+            <div class="progress-fill"></div>
+        </div>
+
         <header>
-            <h1 id="title">User Experience Survey</h1>
-            <p id="description">Help us improve by sharing your thoughts.</p>
+            <h1>Project Feedback</h1>
+            <p>Your insights help us craft better digital experiences.</p>
         </header>
         
         <form id="survey-form">
-            <div class="input-row">
+            <div class="grid-section">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Jane Doe" required>
+                    <input type="text" id="name" placeholder="Alex Rivera" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="jane@example.com" required>
+                    <input type="email" id="email" placeholder="alex@studio.com" required>
                 </div>
             </div>
 
             <div class="form-group">
-                <p class="label-heading">How often do you use our service?</p>
-                <div class="radio-group">
-                    <label class="radio-item"><input name="usage" value="daily" type="radio"> Daily</label>
-                    <label class="radio-item"><input name="usage" value="weekly" type="radio"> Weekly</label>
-                    <label class="radio-item"><input name="usage" value="monthly" type="radio"> Monthly</label>
+                <span class="section-label">Overall Satisfaction</span>
+                <div class="radio-card-group">
+                    <label class="radio-card">
+                        <input type="radio" name="satisfaction" value="low">
+                        <div class="card-content"><span>😞</span> Poor</div>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="satisfaction" value="mid" checked>
+                        <div class="card-content"><span>😐</span> Good</div>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="satisfaction" value="high">
+                        <div class="card-content"><span>🤩</span> Amazing</div>
+                    </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <p class="label-heading">What features do you love? (Select all that apply)</p>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" value="speed"> High Speed</label>
-                    <label><input type="checkbox" value="design"> Modern Design</label>
-                    <label><input type="checkbox" value="support"> 24/7 Support</label>
+                <label for="source">How did you find us?</label>
+                <div class="select-wrapper">
+                    <select id="source">
+                        <option value="social">Social Media</option>
+                        <option value="referral">Word of Mouth</option>
+                        <option value="portfolio">Portfolio Search</option>
+                    </select>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="comments">Additional Feedback</label>
-                <textarea id="comments" rows="4" placeholder="Tell us more..."></textarea>
+                <label for="comments">What can we improve?</label>
+                <textarea id="comments" placeholder="I loved the layout, but maybe add..."></textarea>
             </div>
 
-            <button type="submit" id="submit">Send Feedback</button>
+            <button type="submit" class="submit-btn">
+                <span>Submit Response</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
         </form>
     </div>
 </body>
