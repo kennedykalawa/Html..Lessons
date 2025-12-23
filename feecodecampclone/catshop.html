@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All about cat photos and personality traits"> 
+    <title>CatPhotoApp | K-Tec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cats.css">
+</head>
+<body>
+    <main class="container">
+        <header class="main-header">
+            <h1>CatPhotoApp</h1>
+            <p class="subtitle">Join our community of cat lovers</p>
+        </header>
+
+        <section class="card">
+            <h2>Cat Photos</h2>
+            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+            <div class="image-container">
+                <a href="https://freecatphotoapp.com">
+                    <img src="cat1.jpeg" alt="A cute orange cat lying on its back." class="featured-img">
+                </a>
+            </div>
+            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        </section>
+
+        <section class="card">
+            <h2>Cat Behavior</h2>
+            <div class="list-grid">
+                <div class="list-item">
+                    <h3>Things cats love:</h3>
+                    <ul>
+                        <li>catnip</li>
+                        <li>laser pointers</li>
+                        <li>lasagna</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <h3>Top 3 things cats hate:</h3>
+                    <ol>
+                        <li>flea treatment</li>
+                        <li>thunder</li>
+                        <li>other cats</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <figure class="featured-figure">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+            </figure>
+        </section>
+
+        <section class="card">
+            <h2>Cat Submission Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo" class="styled-form">
+                <fieldset>
+                    <legend>Environment</legend>
+                    <div class="options-group">
+                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personality</legend>
+                    <div class="options-group">
+                        <label><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+                        <label><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                        <label><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
+                    </div>
+                </fieldset>
+
+                <div class="submit-group">
+                    <input type="text" name="catphotourl" placeholder="Cat photo URL" required>
+                    <button type="submit">Submit Photo</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        <p class="brand">K-Tec</p> 
+    </footer>
+</body>
+</html>
