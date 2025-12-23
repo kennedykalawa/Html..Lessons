@@ -1,0 +1,155 @@
+/* Body & Background */
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Glassmorphism Menu Container */
+.menu-container {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.95); /* Clean white background */
+    padding: 50px;
+    border-radius: 2px; /* Sharp, professional edges */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    position: relative;
+    border: 1px solid #d4a373; /* Subtle gold/coffee border */
+}
+
+/* Header Styling */
+.cafe-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.established {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #a67c52;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+
+/* Divider Styling */
+.top-divider {
+    height: 1px;
+    background-color: #d4a373;
+    border: none;
+    width: 60%;
+    margin: 30px auto;
+}
+
+/* Section Headings */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Icon Polish */
+.menu-icon {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: sepia(0.5); /* Gives images a vintage cafe feel */
+}
+
+/* Item Layout with Price Leader */
+.item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+    cursor: default;
+}
+
+.item:hover {
+    transform: translateX(5px); /* Subtle shift on hover */
+}
+
+.flavor, .dessert {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* The Dotted Line (Price Leader) */
+.dot-leader {
+    flex-grow: 1;
+    border-bottom: 2px dotted #d4a373;
+    margin: 0 10px;
+    position: relative;
+    top: -4px;
+}
+
+.price {
+    font-weight: 600;
+    color: #a67c52;
+    margin: 0;
+}
+
+/* Footer Refinement */
+.cafe-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.bottom-line {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin-bottom: 25px;
+}
+
+.cafe-footer a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border: 1px solid #1a1a1a;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cafe-footer a:hover {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.address {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.brand-signature {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #d4a373;
+    margin-top: 10px;
+}
