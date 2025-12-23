@@ -1,0 +1,43 @@
+/* Base Styles - Step 1: Layout & Background */
+body {
+    margin: 0;
+    padding: 0;
+    /* Soft, professional gradient instead of plain black */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Soft shadow for a modern feel */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a67c52;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
