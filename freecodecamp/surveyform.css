@@ -152,4 +152,5 @@ input:focus, textarea:focus {
 /* Responsive Adjustments */
 @media (max-width: 480px) {
     .grid-section { grid-template-columns: 1fr; }
-    .radio-card-group { grid-template-columns:
+    .radio-card-group { grid-template-columns: 1fr; }
+}
