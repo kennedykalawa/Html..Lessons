@@ -1,5 +1,6 @@
-/* Body & Background */
+/* --- GLOBAL STYLES & BACKGROUND --- */
 body {
+    /* Uses the original coffee bean image but adds a dark gradient for better text contrast */
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                       url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     background-size: cover;
@@ -13,19 +14,19 @@ body {
     padding: 40px 20px;
 }
 
-/* Glassmorphism Menu Container */
+/* --- THE MENU CONTAINER --- */
 .menu-container {
     width: 100%;
     max-width: 550px;
-    background: rgba(255, 255, 255, 0.95); /* Clean white background */
+    background: rgba(255, 255, 255, 0.95); /* Clean, off-white background */
     padding: 50px;
-    border-radius: 2px; /* Sharp, professional edges */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-radius: 4px; /* Slight rounding for a professional feel */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4); /* Deep shadow for depth */
     position: relative;
-    border: 1px solid #d4a373; /* Subtle gold/coffee border */
+    border: 1px solid #d4a373; /* Subtle gold/coffee-colored border */
 }
 
-/* Header Styling */
+/* --- TYPOGRAPHY --- */
 .cafe-header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
@@ -36,7 +37,6 @@ body {
 }
 
 .established {
-    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 300;
     color: #a67c52;
@@ -47,61 +47,42 @@ body {
     font-size: 0.8rem;
 }
 
-/* Divider Styling */
-.top-divider {
-    height: 1px;
-    background-color: #d4a373;
-    border: none;
-    width: 60%;
-    margin: 30px auto;
-}
-
-/* Section Headings */
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     text-align: center;
     color: #1a1a1a;
+    margin-top: 40px;
     margin-bottom: 30px;
-    position: relative;
 }
 
-/* Icon Polish */
-.menu-icon {
-    width: 80px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-    filter: sepia(0.5); /* Gives images a vintage cafe feel */
-}
-
-/* Item Layout with Price Leader */
+/* --- MENU ITEMS & DOT LEADERS --- */
 .item {
-    display: flex;
-    align-items: baseline;
+    display: flex; /* Flexbox aligns item name, dots, and price in one line */
+    align-items: baseline; /* Ensures text aligns along the bottom line */
     margin-bottom: 12px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
     cursor: default;
 }
 
 .item:hover {
-    transform: translateX(5px); /* Subtle shift on hover */
+    transform: translateX(5px); /* Modern "nudge" effect on hover */
 }
 
 .flavor, .dessert {
     font-weight: 600;
     color: #333;
     margin: 0;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text from breaking into two lines */
 }
 
 /* The Dotted Line (Price Leader) */
 .dot-leader {
-    flex-grow: 1;
-    border-bottom: 2px dotted #d4a373;
+    flex-grow: 1; /* This makes the dots fill the middle space automatically */
+    border-bottom: 2px dotted #d4a373; /* Classic artisanal cafe look */
     margin: 0 10px;
     position: relative;
-    top: -4px;
+    top: -4px; /* Aligns dots perfectly between the texts */
 }
 
 .price {
@@ -110,7 +91,24 @@ h2 {
     margin: 0;
 }
 
-/* Footer Refinement */
+/* --- ICONS & DIVIDERS --- */
+.menu-icon {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: sepia(0.5); /* Gives icons a vintage, cohesive feel */
+}
+
+.top-divider {
+    height: 1px;
+    background-color: #d4a373;
+    border: none;
+    width: 60%;
+    margin: 30px auto;
+}
+
+/* --- FOOTER SECTION --- */
 .cafe-footer {
     text-align: center;
     margin-top: 50px;
@@ -123,19 +121,19 @@ h2 {
     margin-bottom: 25px;
 }
 
-.cafe-footer a {
+.order-link {
     text-decoration: none;
     color: #1a1a1a;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    border: 1px solid #1a1a1a;
+    border: 1px solid #1a1a1a; /* Modern button-like link */
     padding: 10px 20px;
     transition: 0.3s;
 }
 
-.cafe-footer a:hover {
+.order-link:hover {
     background: #1a1a1a;
     color: #fff;
 }
